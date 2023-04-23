@@ -10,6 +10,8 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import com.scwang.wave.MultiWaveHeader;
+
 public class MainActivity extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 800;
 
@@ -18,10 +20,21 @@ public class MainActivity extends AppCompatActivity {
     //View
     View main_logo1;
 
+    MultiWaveHeader wave_header;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ///Wave
+        wave_header=findViewById(R.id.wave_header);
+        wave_header.setVelocity(10);
+        wave_header.setProgress(1);
+        wave_header.isRunning();
+        wave_header.setGradientAngle(45);
+        wave_header.setWaveHeight(40);
+
         //Animation
         ceterAnimation= AnimationUtils.loadAnimation(this, R.anim.center_animation);
         //View

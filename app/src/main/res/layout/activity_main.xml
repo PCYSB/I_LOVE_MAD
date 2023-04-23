@@ -7,12 +7,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/main_logo1"
-        android:layout_marginTop="280dp"
-        android:layout_gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:background="@drawable/main_logo_1"
-         />
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <View
+            android:id="@+id/main_logo1"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:background="@drawable/main_logo_1"
+            />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.scwang.wave.MultiWaveHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:scaleY="-1"
+            app:mwhStartColor="#0C053A"
+            app:mwhCloseColor="#0C053A"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/wave_header"/>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="right"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:background="@drawable/fish"
+            />
+
+
+    </FrameLayout>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
