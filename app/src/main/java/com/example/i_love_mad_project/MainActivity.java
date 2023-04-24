@@ -13,7 +13,7 @@ import android.view.animation.AnimationUtils;
 import com.scwang.wave.MultiWaveHeader;
 
 public class MainActivity extends AppCompatActivity {
-    private static int SPLASH_TIME_OUT = 800;
+    private static int SPLASH_TIME_OUT = 1500;
 
     //Animation
     Animation ceterAnimation;
