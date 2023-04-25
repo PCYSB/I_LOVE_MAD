@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 import com.scwang.wave.MultiWaveHeader;
 
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Animation ceterAnimation;
     //View
     View main_logo1;
+    TextView i_mad;
 
     MultiWaveHeader wave_header;
 
@@ -39,16 +40,20 @@ public class MainActivity extends AppCompatActivity {
         ceterAnimation= AnimationUtils.loadAnimation(this, R.anim.center_animation);
         //View
         main_logo1=findViewById(R.id.main_logo1);
+        i_mad=findViewById(R.id.i_mad);
 
+        i_mad.setAnimation(ceterAnimation);
         main_logo1.setAnimation(ceterAnimation);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this, secondActivity.class);
+                Intent intent = new Intent(MainActivity.this, loginActivity.class);
                 startActivity(intent);
                 finish();
             }
         },SPLASH_TIME_OUT);
+
+
     }
 }

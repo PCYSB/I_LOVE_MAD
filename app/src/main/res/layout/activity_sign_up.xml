@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textColor="#0C053A"
+            android:text="  회원가입하기"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:scaleY="-1"
+            app:mwhStartColor="#0C053A"
+            app:mwhCloseColor="#0C053A"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일"/>
+
+        <EditText
+            android:textColor="@color/white"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="40dp"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:hint=" 입력"
+            android:background="@null"
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_marginTop="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:textColor="@color/white"
+            android:layout_marginTop="190dp"
+            android:paddingLeft="40dp"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:hint=" 입력"
+            android:background="@null"
+            android:id="@+id/user_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_marginTop="260dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:textColor="@color/white"
+            android:layout_marginTop="310dp"
+            android:paddingLeft="40dp"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:hint=" 입력"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_marginTop="380dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 확인"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:textColor="@color/white"
+            android:layout_marginTop="430dp"
+            android:paddingLeft="40dp"
+            android:textSize="20sp"
+            android:textColorHint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:hint=" 입력"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/main"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="470dp"
+            android:textStyle="bold"
+            android:background="@drawable/round_button"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:text="회원가입"/>
+
+        <View
+            android:layout_marginTop="460dp"
+            android:layout_marginLeft="240dp"
+            android:background="@drawable/fish"
+            android:layout_width="130dp"
+            android:layout_height="80dp"/>
+
+
+        <TextView
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="560dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="계정이 있으신가요?  로그인"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

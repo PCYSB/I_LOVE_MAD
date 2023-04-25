@@ -21,6 +21,15 @@
             android:background="@drawable/main_logo_1"
             />
 
+        <TextView
+            android:textColor="#0C053A"
+            android:textStyle="bold"
+            android:text="아이매드"
+            android:textSize="17sp"
+            android:id="@+id/i_mad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
 
     </LinearLayout>
 
@@ -40,6 +49,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:id="@+id/wave_header"/>
+
+
 
         <View
             android:layout_marginRight="20dp"
