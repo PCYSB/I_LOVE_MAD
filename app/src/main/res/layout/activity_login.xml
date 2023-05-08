@@ -75,6 +75,7 @@
             android:textStyle="bold"/>
 
         <EditText
+            android:id="@+id/user_password"
             android:textColor="@color/white"
             android:layout_marginTop="270dp"
             android:paddingLeft="40dp"
@@ -83,7 +84,6 @@
             android:drawableStart="@drawable/ic_baseline_lock_24"
             android:hint="입력"
             android:background="@null"
-            android:id="@+id/user_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

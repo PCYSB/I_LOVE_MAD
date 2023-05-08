@@ -10,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.example.i_love_mad_project.main_view.loginActivity;
 import com.scwang.wave.MultiWaveHeader;
 
 public class MainActivity extends AppCompatActivity {
