@@ -42,6 +42,7 @@
 
         <TextView
 
+            android:id="@+id/tv_email"
             android:paddingLeft="30dp"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
@@ -60,7 +61,7 @@
             android:drawableStart="@drawable/ic_baseline_email_24"
             android:hint=" 입력"
             android:background="@null"
-            android:id="@+id/user_id"
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -69,7 +70,7 @@
             android:layout_marginTop="140dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="아이디"
+            android:text="닉네임"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:textStyle="bold"/>
@@ -83,11 +84,12 @@
             android:drawableStart="@drawable/ic_baseline_person_24"
             android:hint=" 입력"
             android:background="@null"
-            android:id="@+id/user_password"
+            android:id="@+id/et_nickname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:id="@+id/tv_password"
             android:paddingLeft="30dp"
             android:layout_marginTop="260dp"
             android:layout_width="wrap_content"
@@ -98,6 +100,7 @@
             android:textStyle="bold"/>
 
         <EditText
+            android:id="@+id/et_password"
             android:textColor="@color/white"
             android:layout_marginTop="310dp"
             android:paddingLeft="40dp"
@@ -110,6 +113,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:id="@+id/tv_password_check"
             android:paddingLeft="30dp"
             android:layout_marginTop="380dp"
             android:layout_width="wrap_content"
@@ -120,6 +124,7 @@
             android:textStyle="bold"/>
 
         <EditText
+            android:id="@+id/et_password_check"
             android:textColor="@color/white"
             android:layout_marginTop="430dp"
             android:paddingLeft="40dp"
@@ -132,6 +137,7 @@
             android:layout_height="wrap_content"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signUp"
             android:textColor="@color/main"
             android:textSize="15sp"
             android:layout_marginLeft="30dp"
@@ -151,6 +157,7 @@
 
 
         <TextView
+            android:id="@+id/login_view"
             android:layout_marginLeft="123dp"
             android:layout_marginTop="560dp"
             android:textColor="@color/white"
